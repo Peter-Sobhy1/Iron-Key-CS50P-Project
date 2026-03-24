@@ -114,6 +114,7 @@ def evaluate_strength(password):
         score += 1
     if any(c in s.punctuation for c in password):
         score += 1
+
     if score == 4:
         return "Strong"
     elif score >= 2:
