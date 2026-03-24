@@ -79,6 +79,12 @@ README.md           # This file
 ```
 
 ---
+## Imported Libraries
+### String & Random
+```python
+import random
+import string as s
+```
 
 ## Functions
 
