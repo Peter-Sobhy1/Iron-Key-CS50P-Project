@@ -55,7 +55,7 @@ You will be greeted with the Iron Key welcome screen and prompted to choose betw
 
 | Criteria | Points |
 |---|---|
-| Length >= 12 characters | +1 |
+| Length is greater than or equal to 12 characters | +1 |
 | Mix of uppercase and lowercase | +1 |
 | Contains at least one digit | +1 |
 | Contains at least one special character | +1 |
