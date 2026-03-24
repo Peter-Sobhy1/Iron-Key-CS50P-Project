@@ -60,6 +60,7 @@ You will be greeted with the Iron Key welcome screen and prompted to choose betw
 | Contains at least one digit | +1 |
 | Contains at least one special character | +1 |
 
+
 | Score | Rating |
 |---|---|
 | 4 | Strong |
