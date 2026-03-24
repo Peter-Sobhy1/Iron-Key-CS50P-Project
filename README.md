@@ -127,6 +127,43 @@ def save_to_file(password, app, filename="my_passwords.txt"):
     print(f"Success! Password securely saved to {filename}.")
 ```
 
+### `main()`
+Controls the full application flow — displays the welcome message, handles user input, and calls the appropriate functions based on the user's choice.
+
+```python
+def main():
+    """The function of the application."""
+    print("--- Welcome to Iron Key the Password Generator & Analyzer ---")
+    choice = input('Choose "1" to Generate Password\nChoose "2" to Analyze Password:\n')
+    try:
+        if choice == "1":
+            user_input = input("How long do you want your password to be? (For Example: 16): ")
+            length = int(user_input)
+            if length < 4:
+                print("For security, please choose a length of at least 4.")
+                return
+            new_password = generate_password(length)
+            print(f"\nYour new password is: {new_password}")
+            strength = evaluate_strength(new_password)
+            print(f"Password Strength Rating: {strength}")
+            save_choice = input("\nWould you like to save this password to a file? (y/n): ").strip().lower()
+            if save_choice == 'y':
+                app = input("This Password is for which APP/Website? ").strip()
+                file_path = input('Choose "1" for Default Path\nor Enter Your File Path: ')
+                if file_path == "1":
+                    save_to_file(new_password, app)
+                else:
+                    save_to_file(new_password, app, file_path)
+            else:
+                print("Password not saved. Make sure to copy it!")
+        elif choice == "2":
+            print(evaluate_strength(input("Enter Your Password: ")))
+        else:
+            print('Please Choose "1" or "2"')
+    except ValueError:
+        print("Error: Please enter a valid whole number for the length.")
+```
+
 ---
 
 ## Security Note
