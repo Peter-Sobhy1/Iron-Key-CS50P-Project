@@ -133,7 +133,7 @@ Controls the full application flow — displays the welcome message, handles use
 ```python
 def main():
     """The function of the application."""
-    print("--- Welcome to Iron Key the Password Generator & Analyzer ---")
+    print("--- Welcome to \033[1m Iron Key \033[0m the Password Generator & Analyzer ---")
     choice = input('Choose "1" to Generate Password\nChoose "2" to Analyze Password:\n')
     try:
         if choice == "1":
