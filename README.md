@@ -19,7 +19,7 @@ Iron Key lets you generate strong random passwords, analyze the strength of exis
 
 ---
 
-## Tools Used
+## 🛠️Tools & Technologies
 
 - Python 3.10+
 - VS Code
