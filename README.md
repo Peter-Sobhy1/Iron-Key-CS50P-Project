@@ -19,10 +19,10 @@ Iron Key lets you generate strong random passwords, analyze the strength of exis
 
 ---
 
-## Requirements
+## Tools Used
 
 - Python 3.10+
-- No external libraries required
+- VS Code
 
 ---
 
