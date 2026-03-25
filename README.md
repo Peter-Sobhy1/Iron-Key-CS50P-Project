@@ -2,16 +2,18 @@
 
 
 
-## 📝Description
+#### Video Demo
+🎬 https://youtu.be/XwMjWvmA_qs
+
+---
+
+#### 📝Description
 
 A command-line password manager built in Python for CS50P's final project.
 Iron Key lets you generate strong random passwords, analyze the strength of existing ones, and optionally save them to a file.
 
 ---
-## URL
-🎬 https://youtu.be/XwMjWvmA_qs
 
----
 ## 💡Features
 
 - Generate a random password of any length using letters, numbers, and symbols
