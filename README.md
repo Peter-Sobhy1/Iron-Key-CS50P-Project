@@ -73,12 +73,11 @@ You will be greeted with the Iron Key welcome screen and prompted to choose betw
 
 ---
 
-## Project Structure
+## 🧱Project Structure
 
 ```
 project.py          # Main application
 test_project.py     # Pytest test suite
-my_passwords.txt    # Default save file (created on first save)
 README.md           # This file
 ```
 
@@ -199,7 +198,7 @@ Verifies the generated password has the correct length and contains uppercase, l
 Verifies the strength rating returns `"Strong"`, `"Intermediate"`, and `"Weak"` for known inputs.
 
 ### `test_save_to_file()`
-Verifies the password is saved correctly to a file and the file contains the expected content.
+Verifies that the password is saved correctly to a file and that the file contains the expected content.
 
 ```python
 import project as p
