@@ -89,7 +89,7 @@ import random
 import string as s
 ```
 
-## Functions
+## ƒ Functions
 
 ### `generate_password(length)`
 Generates a random password of the given length using all ASCII letters, digits, and punctuation characters.
